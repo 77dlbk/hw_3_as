@@ -5,5 +5,11 @@
     <color name="orange">#FF9F0F</color>
     <color name="gray">#A5A5A5</color>
     <color name="dark_gray">#323232</color>
+    <color name="SecondActBang">#28323B</color>
+    <color name="darkred">#DC366A</color>
+    <color name="light_gray">#E5E5E5</color>
+    <color name="polzunok">#693BFD</color>
+    <color name="polzunok1">#2D4EF5</color>
+
 
 </resources>

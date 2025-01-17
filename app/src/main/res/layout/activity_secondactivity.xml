@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Secondactivity"
+    android:background="@color/SecondActBang">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/categoty"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Category"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_textviews"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="140dp">
+                
+            </TextView>
+
+            <ImageView
+                android:id="@+id/heart_image_view"
+                android:background="@drawable/ic_heart"
+                android:layout_width="24dp"
+                app:layout_constraintStart_toEndOf="@id/categoty"
+                app:layout_constraintTop_toTopOf="@id/categoty"
+                app:layout_constraintBottom_toBottomOf="@id/categoty"
+                android:layout_marginStart="90dp"
+                android:layout_height="24dp"
+                />
+            <TextView
+                android:id="@+id/mainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/categoty"
+                android:text="Explore the nightlife of your \n city"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@id/categoty"
+                app:layout_constraintEnd_toEndOf="@id/categoty"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/free"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/mainText"
+                android:text="Free"
+                android:textSize="22sp"
+                android:layout_marginTop="60dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="30dp"
+                android:textStyle="bold">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="32dp"
+                android:layout_height="32sp"
+                android:src="@drawable/ic_icon1"
+                app:layout_constraintTop_toBottomOf="@id/mainText"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="55dp"
+                style="@style/ViewImages" >
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_icon2"
+                app:layout_constraintStart_toEndOf="@id/icon1"
+                app:layout_constraintTop_toTopOf="@id/icon1"
+                app:layout_constraintBottom_toBottomOf="@id/icon1"
+                android:layout_marginStart="6dp">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_icon3"
+                app:layout_constraintStart_toEndOf="@id/icon2"
+                app:layout_constraintTop_toTopOf="@id/icon2"
+                app:layout_constraintBottom_toBottomOf="@id/icon2"
+                android:layout_marginStart="6dp">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_icon4"
+                app:layout_constraintStart_toEndOf="@id/icon3"
+                app:layout_constraintTop_toTopOf="@id/icon3"
+                app:layout_constraintBottom_toBottomOf="@id/icon3"
+                android:layout_marginStart="6dp">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/access"
+                android:layout_width="85dp"
+                android:layout_height="10dp"
+                android:foreground="@drawable/gradient"
+                app:layout_constraintStart_toEndOf="@id/icon4"
+                app:layout_constraintTop_toTopOf="@id/icon4"
+                app:layout_constraintBottom_toBottomOf="@id/icon4"
+                android:layout_marginStart="10dp"
+
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price💰"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/free"
+                app:layout_constraintStart_toStartOf="@id/free"
+                app:layout_constraintEnd_toEndOf="@id/free"
+                android:layout_marginStart="35dp"
+                android:paddingBottom="10dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Participants"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toBottomOf="@id/icon2"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_marginTop="14dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Accessibility"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/access"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardview"
+        android:layout_marginTop="30dp"
+        app:cornerRadius="8dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/gradientbutton"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonNext"
+        android:text="Category"
+        android:textColor="@color/light_gray"
+        android:paddingStart="10dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/categorymenu"
+        >
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="190dp"
+        app:layout_constraintTop_toBottomOf="@id/categorymenu"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+
+        android:layout_marginStart="10dp"
+        android:hint="@string/Select"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:background="@drawable/spinnerbackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:id="@+id/auto_complete_view"
+
+            >
+
+        </AutoCompleteTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/categorymenu"
+        app:layout_constraintTop_toBottomOf="@id/buttonNext"
+        android:textAlignment="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"/>
+
+
+    <com.google.android.material.slider.RangeSlider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/price2"
+        app:layout_constraintStart_toEndOf="parent"
+        android:layout_marginStart="190dp"
+        android:valueFrom="0"
+        android:valueTo="100"
+        android:stepSize="1"
+        app:haloColor="@color/white"
+        app:thumbColor="@color/polzunok"
+        app:trackColorActive="@color/polzunok1"
+        app:trackColorInactive="@color/white"
+        app:tickVisible="false"
+        app:values="@array/inital_slider_values"/>
+    <TextView
+        android:id="@+id/Accessibility2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accessibility"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/categorymenu"
+        app:layout_constraintTop_toBottomOf="@id/price2"
+        android:textAlignment="center"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="90dp">
+
+    </TextView>
+    <com.google.android.material.slider.RangeSlider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Accessibility2"
+        app:layout_constraintStart_toEndOf="parent"
+        android:layout_marginStart="190dp"
+        android:valueFrom="0"
+        android:valueTo="100"
+        android:stepSize="1"
+        app:haloColor="@color/white"
+        app:thumbColor="@color/polzunok"
+        app:trackColorActive="@color/polzunok1"
+        app:trackColorInactive="@color/white"
+        app:tickVisible="false"
+        app:values="@array/inital_slider_values"
+        >
+
+
+    </com.google.android.material.slider.RangeSlider>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

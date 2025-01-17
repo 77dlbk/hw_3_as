@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">hw_3_as</string>
+    <string name="Select">Type</string>
+    <array name="inital_slider_values">
+        <item>10</item>
+        <item>50</item>
+    </array>
 </resources>
